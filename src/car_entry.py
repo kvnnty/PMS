@@ -8,7 +8,7 @@ import serial.tools.list_ports
 import csv
 from collections import Counter
 
-# Load YOLOv8 model
+# Load the best-performing YOLOv8 model weight (best.pt)
 model_path = os.path.join(os.path.dirname(__file__), 'models', 'weights', 'best.pt')
 model = YOLO(model_path)
 
