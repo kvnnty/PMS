@@ -7,23 +7,14 @@ import serial
 import serial.tools.list_ports
 import csv
 from collections import Counter
+import random
 
-# Load the best-performing YOLOv8 model weight (best.pt)
+# Load YOLOv8 model (same model as entry)
 model_path = os.path.join(os.path.dirname(__file__), 'models', 'weights', 'best.pt')
 model = YOLO(model_path)
 
-# Plate save directory
-save_dir = 'plates'
-os.makedirs(save_dir, exist_ok=True)
-
 # CSV log file
-# TODO: Replace with actual database
-
 csv_file = 'logs/plates_log.csv'
-if not os.path.exists(csv_file):
-    with open(csv_file, 'w', newline='') as f:
-        writer = csv.writer(f)
-        writer.writerow(['Plate Number', 'Payment Status', 'Timestamp'])
 
 # ===== Auto-detect Arduino Serial Port =====
 def detect_arduino_port():
@@ -48,19 +39,26 @@ else:
     print("[ERROR] Arduino not detected.")
     arduino = None
 
-# ===== Ultrasonic Sensor Setup =====
-import random
+# ===== Ultrasonic Sensor (mock for now) =====
 def mock_ultrasonic_distance():
     return random.choice([random.randint(10, 40)] + [random.randint(60, 150)] * 10)
 
-# Initialize webcam
+# ===== Check payment status in CSV =====
+def is_payment_complete(plate_number):
+    if not os.path.exists(csv_file):
+        return False
+    with open(csv_file, 'r') as f:
+        reader = csv.DictReader(f)
+        for row in reader:
+            if row['Plate Number'] == plate_number and row['Payment Status'] == '1':
+                return True
+    return False
+
+# ===== Webcam and Main Loop =====
 cap = cv2.VideoCapture(0)
 plate_buffer = []
-entry_cooldown = 300  # 5 minutes
-last_saved_plate = None
-last_entry_time = 0
 
-print("[SYSTEM] Ready. Press 'q' to exit.")
+print("[EXIT SYSTEM] Ready. Press 'q' to quit.")
 
 while True:
     ret, frame = cap.read()
@@ -78,17 +76,16 @@ while True:
                 x1, y1, x2, y2 = map(int, box.xyxy[0])
                 plate_img = frame[y1:y2, x1:x2]
 
-                # Plate Image Processing
+                # Preprocessing
                 gray = cv2.cvtColor(plate_img, cv2.COLOR_BGR2GRAY)
                 blur = cv2.GaussianBlur(gray, (5, 5), 0)
                 thresh = cv2.threshold(blur, 0, 255, cv2.THRESH_BINARY + cv2.THRESH_OTSU)[1]
 
-                # OCR Extraction
+                # OCR
                 plate_text = pytesseract.image_to_string(
                     thresh, config='--psm 8 --oem 3 -c tessedit_char_whitelist=ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789'
                 ).strip().replace(" ", "")
 
-                # Plate Validation
                 if "RA" in plate_text:
                     start_idx = plate_text.find("RA")
                     plate_candidate = plate_text[start_idx:]
@@ -100,39 +97,30 @@ while True:
                             print(f"[VALID] Plate Detected: {plate_candidate}")
                             plate_buffer.append(plate_candidate)
 
-                            # Decision after 3 captures
                             if len(plate_buffer) >= 3:
                                 most_common = Counter(plate_buffer).most_common(1)[0][0]
-                                current_time = time.time()
-
-                                if (most_common != last_saved_plate or
-                                    (current_time - last_entry_time) > entry_cooldown):
-
-                                    with open(csv_file, 'a', newline='') as f:
-                                        writer = csv.writer(f)
-                                        writer.writerow([most_common, 0,time.strftime('%Y-%m-%d %H:%M:%S')])
-                                    print(f"[SAVED] {most_common} logged to CSV.")
-
-                                    if arduino:
-                                        arduino.write(b'1')
-                                        print("[GATE] Opening gate (sent '1')")
-                                        time.sleep(15)  # Gate open duration
-                                        arduino.write(b'0')
-                                        print("[GATE] Closing gate (sent '0')")
-
-                                    last_saved_plate = most_common
-                                    last_entry_time = current_time
-                                else:
-                                    print("[SKIPPED] Duplicate within 5 min window.")
-
                                 plate_buffer.clear()
+
+                                if is_payment_complete(most_common):
+                                    print(f"[ACCESS GRANTED] Payment complete for {most_common}")
+                                    if arduino:
+                                        arduino.write(b'1')  # Open gate
+                                        print("[GATE] Opening gate (sent '1')")
+                                        time.sleep(15)
+                                        arduino.write(b'0')  # Close gate
+                                        print("[GATE] Closing gate (sent '0')")
+                                else:
+                                    print(f"[ACCESS DENIED] Payment NOT complete for {most_common}")
+                                    if arduino:
+                                        arduino.write(b'2')  # Trigger warning buzzer
+                                        print("[ALERT] Buzzer triggered (sent '2')")
 
                 cv2.imshow("Plate", plate_img)
                 cv2.imshow("Processed", thresh)
                 time.sleep(0.5)
 
     annotated_frame = results[0].plot() if distance <= 50 else frame
-    cv2.imshow('Webcam Feed', annotated_frame)
+    cv2.imshow("Exit Webcam Feed", annotated_frame)
 
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break

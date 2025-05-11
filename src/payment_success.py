@@ -1,7 +1,7 @@
 import csv
 import os
 
-csv_file = 'plates_log.csv'
+csv_file = '/logs/plates_log.csv'
 
 def mark_payment_success(plate_number):
     if not os.path.exists(csv_file):
