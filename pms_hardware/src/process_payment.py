@@ -47,7 +47,7 @@ def process_payment(plate, balance, ser):
             ORDER BY no DESC LIMIT 1
         ''', (plate,))
         row = cursor.fetchone()
-
+        print(plate)
         if not row:
             print("[PAYMENT] No unpaid record found for this vehicle.")
             return

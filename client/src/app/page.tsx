@@ -162,18 +162,26 @@ export default function Home() {
                 </tr>
               </thead>
               <tbody>
-                {filteredVehicles.map((v) => (
-                  <tr key={v.no} className="hover:bg-gray-100 dark:hover:bg-gray-700">
-                    <td className="p-3">{v.car_plate}</td>
-                    <td className="p-3">{v.entry_time}</td>
-                    <td className="p-3">{v.exit_time || "---"}</td>
-                    <td className="p-3">{v.due_payment || "N/A"}</td>
-                    <td className="p-3">{v.payment_status === "1" ? "Paid" : "Unpaid"}</td>
-                    <td className={`p-3`}>
-                      <span className={`${v.payment_status === "1" ? "bg-green-200" : "bg-yellow-200"}`}>{v.payment_status === "0" ? "YES" : "NO"}</span>
+                {filteredVehicles.length < 1 ? (
+                  <tr>
+                    <td className="col-span-6">
+                      <div className="h-20 flex justify-center items-center">No vehicles yet</div>
                     </td>
                   </tr>
-                ))}
+                ) : (
+                  filteredVehicles.map((v) => (
+                    <tr key={v.no} className="hover:bg-gray-100 dark:hover:bg-gray-700">
+                      <td className="p-3">{v.car_plate}</td>
+                      <td className="p-3">{v.entry_time}</td>
+                      <td className="p-3">{v.exit_time || "---"}</td>
+                      <td className="p-3">{v.due_payment || "N/A"}</td>
+                      <td className="p-3">{v.payment_status === "1" ? "Paid" : "Unpaid"}</td>
+                      <td className={`p-3`}>
+                        <span className={`${v.payment_status === "1" ? "bg-green-200" : "bg-yellow-200"}`}>{v.payment_status === "1" ? "YES" : "NO"}</span>
+                      </td>
+                    </tr>
+                  ))
+                )}
               </tbody>
             </table>
           </div>
@@ -188,30 +196,36 @@ export default function Home() {
                   <th className="p-3 text-left">Plate</th>
                   <th className="p-3 text-left">Alert Time</th>
                   <th className="p-3 text-left">Alert Type</th>
-                  <th className="p-3 text-left">Due Payment</th>
                   <th className="p-3 text-left">Notes</th>
                   <th className="p-3 text-left">Status</th>
                   <th className="p-3 text-left">Action</th>
                 </tr>
               </thead>
               <tbody>
-                {alerts.map((a) => (
-                  <tr key={a.id} className="hover:bg-gray-100 dark:hover:bg-gray-700">
-                    <td className="p-3">{a.car_plate}</td>
-                    <td className="p-3">{a.alert_time}</td>
-                    <td className="p-3">{a.alert_type}</td>
-                    <td className="p-3">{a.due_payment || "N/A"}</td>
-                    <td className="p-3">{a.notes}</td>
-                    <td className="p-3">{a.resolved === 1 ? "Resolved" : "Active"}</td>
-                    <td className="p-3">
-                      {a.resolved === 0 && (
-                        <button onClick={() => handleResolveAlert(a.id)} className="px-3 py-1 bg-blue-500 text-white rounded hover:bg-blue-600">
-                          Resolve
-                        </button>
-                      )}
+                {alerts.length < 1 ? (
+                  <tr>
+                    <td className="col-span-6">
+                      <div className="h-20 flex justify-center items-center">No alerts yet</div>
                     </td>
                   </tr>
-                ))}
+                ) : (
+                  alerts.map((a) => (
+                    <tr key={a.id} className="hover:bg-gray-100 dark:hover:bg-gray-700">
+                      <td className="p-3">{a.car_plate}</td>
+                      <td className="p-3">{a.alert_time}</td>
+                      <td className="p-3">{a.alert_type}</td>
+                      <td className="p-3">{a.notes}</td>
+                      <td className="p-3">{a.resolved === 1 ? "Resolved" : "Active"}</td>
+                      <td className="p-3">
+                        {a.resolved === 0 && (
+                          <button onClick={() => handleResolveAlert(a.id)} className="px-3 py-1 bg-blue-500 text-white rounded hover:bg-blue-600">
+                            Resolve
+                          </button>
+                        )}
+                      </td>
+                    </tr>
+                  ))
+                )}
               </tbody>
             </table>
           </div>
