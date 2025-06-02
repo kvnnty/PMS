@@ -1,0 +1,107 @@
+2025-06-02 16:50:41,676 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+2025-06-02 16:50:41,676 - INFO - [33mPress CTRL+C to quit[0m
+2025-06-02 16:50:41,677 - INFO -  * Restarting with stat
+2025-06-02 16:50:41,879 - WARNING -  * Debugger is active!
+2025-06-02 16:50:41,883 - INFO -  * Debugger PIN: 771-455-585
+2025-06-02 16:50:54,206 - ERROR - Error fetching vehicles: unable to open database file
+2025-06-02 16:50:54,206 - INFO - 127.0.0.1 - - [02/Jun/2025 16:50:54] "[35m[1mGET /api/vehicles HTTP/1.1[0m" 500 -
+2025-06-02 16:50:54,215 - ERROR - Error fetching alerts: unable to open database file
+2025-06-02 16:50:54,215 - INFO - 127.0.0.1 - - [02/Jun/2025 16:50:54] "[35m[1mGET /api/alerts HTTP/1.1[0m" 500 -
+2025-06-02 16:50:54,224 - ERROR - Error fetching stats: unable to open database file
+2025-06-02 16:50:54,225 - INFO - 127.0.0.1 - - [02/Jun/2025 16:50:54] "[35m[1mGET /api/stats HTTP/1.1[0m" 500 -
+2025-06-02 16:50:59,153 - ERROR - Error fetching vehicles: unable to open database file
+2025-06-02 16:50:59,154 - INFO - 127.0.0.1 - - [02/Jun/2025 16:50:59] "[35m[1mGET /api/vehicles HTTP/1.1[0m" 500 -
+2025-06-02 16:50:59,475 - ERROR - Error fetching alerts: unable to open database file
+2025-06-02 16:50:59,475 - ERROR - Error fetching stats: unable to open database file
+2025-06-02 16:50:59,476 - INFO - 127.0.0.1 - - [02/Jun/2025 16:50:59] "[35m[1mGET /api/alerts HTTP/1.1[0m" 500 -
+2025-06-02 16:50:59,476 - INFO - 127.0.0.1 - - [02/Jun/2025 16:50:59] "[35m[1mGET /api/stats HTTP/1.1[0m" 500 -
+2025-06-02 16:51:04,155 - ERROR - Error fetching vehicles: unable to open database file
+2025-06-02 16:51:04,156 - INFO - 127.0.0.1 - - [02/Jun/2025 16:51:04] "[35m[1mGET /api/vehicles HTTP/1.1[0m" 500 -
+2025-06-02 16:51:04,486 - ERROR - Error fetching alerts: unable to open database file
+2025-06-02 16:51:04,486 - INFO - 127.0.0.1 - - [02/Jun/2025 16:51:04] "[35m[1mGET /api/alerts HTTP/1.1[0m" 500 -
+2025-06-02 16:51:04,486 - ERROR - Error fetching stats: unable to open database file
+2025-06-02 16:51:04,487 - INFO - 127.0.0.1 - - [02/Jun/2025 16:51:04] "[35m[1mGET /api/stats HTTP/1.1[0m" 500 -
+2025-06-02 16:51:09,154 - ERROR - Error fetching vehicles: unable to open database file
+2025-06-02 16:51:09,155 - INFO - 127.0.0.1 - - [02/Jun/2025 16:51:09] "[35m[1mGET /api/vehicles HTTP/1.1[0m" 500 -
+2025-06-02 16:51:09,486 - ERROR - Error fetching alerts: unable to open database file
+2025-06-02 16:51:09,487 - INFO - 127.0.0.1 - - [02/Jun/2025 16:51:09] "[35m[1mGET /api/alerts HTTP/1.1[0m" 500 -
+2025-06-02 16:51:09,487 - ERROR - Error fetching stats: unable to open database file
+2025-06-02 16:51:09,487 - INFO - 127.0.0.1 - - [02/Jun/2025 16:51:09] "[35m[1mGET /api/stats HTTP/1.1[0m" 500 -
+2025-06-02 16:51:12,170 - INFO -  * Detected change in 'C:\\Users\\user\\Desktop\\NE-resources\\Practicals\\Intelligent Robotics\\parking-management-system\\server\\app.py', reloading
+2025-06-02 16:51:12,218 - INFO -  * Restarting with stat
+2025-06-02 16:51:12,433 - WARNING -  * Debugger is active!
+2025-06-02 16:51:12,436 - INFO -  * Debugger PIN: 771-455-585
+2025-06-02 16:51:14,455 - ERROR - Error fetching vehicles: unable to open database file
+2025-06-02 16:51:14,455 - INFO - 127.0.0.1 - - [02/Jun/2025 16:51:14] "[35m[1mGET /api/vehicles HTTP/1.1[0m" 500 -
+2025-06-02 16:51:14,464 - INFO -  * Detected change in 'C:\\Users\\user\\Desktop\\NE-resources\\Practicals\\Intelligent Robotics\\parking-management-system\\server\\app.py', reloading
+2025-06-02 16:51:14,498 - INFO -  * Restarting with stat
+2025-06-02 16:51:14,702 - WARNING -  * Debugger is active!
+2025-06-02 16:51:14,705 - INFO -  * Debugger PIN: 771-455-585
+2025-06-02 16:51:14,718 - ERROR - Error fetching alerts: unable to open database file
+2025-06-02 16:51:14,719 - INFO - 127.0.0.1 - - [02/Jun/2025 16:51:14] "[35m[1mGET /api/alerts HTTP/1.1[0m" 500 -
+2025-06-02 16:51:14,720 - ERROR - Error fetching stats: unable to open database file
+2025-06-02 16:51:14,721 - INFO - 127.0.0.1 - - [02/Jun/2025 16:51:14] "[35m[1mGET /api/stats HTTP/1.1[0m" 500 -
+2025-06-02 16:51:18,756 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+2025-06-02 16:51:18,756 - INFO - [33mPress CTRL+C to quit[0m
+2025-06-02 16:51:18,757 - INFO -  * Restarting with stat
+2025-06-02 16:51:18,959 - WARNING -  * Debugger is active!
+2025-06-02 16:51:18,962 - INFO -  * Debugger PIN: 771-455-585
+2025-06-02 16:51:19,462 - INFO - 127.0.0.1 - - [02/Jun/2025 16:51:19] "GET /api/vehicles HTTP/1.1" 200 -
+2025-06-02 16:51:19,476 - INFO - 127.0.0.1 - - [02/Jun/2025 16:51:19] "GET /api/alerts HTTP/1.1" 200 -
+2025-06-02 16:51:19,477 - INFO - 127.0.0.1 - - [02/Jun/2025 16:51:19] "GET /api/stats HTTP/1.1" 200 -
+2025-06-02 16:51:24,150 - INFO - 127.0.0.1 - - [02/Jun/2025 16:51:24] "GET /api/vehicles HTTP/1.1" 200 -
+2025-06-02 16:51:24,470 - INFO - 127.0.0.1 - - [02/Jun/2025 16:51:24] "GET /api/alerts HTTP/1.1" 200 -
+2025-06-02 16:51:24,471 - INFO - 127.0.0.1 - - [02/Jun/2025 16:51:24] "GET /api/stats HTTP/1.1" 200 -
+2025-06-02 16:51:29,166 - INFO - 127.0.0.1 - - [02/Jun/2025 16:51:29] "GET /api/vehicles HTTP/1.1" 200 -
+2025-06-02 16:51:29,484 - INFO - 127.0.0.1 - - [02/Jun/2025 16:51:29] "GET /api/alerts HTTP/1.1" 200 -
+2025-06-02 16:51:29,486 - INFO - 127.0.0.1 - - [02/Jun/2025 16:51:29] "GET /api/stats HTTP/1.1" 200 -
+2025-06-02 16:51:34,660 - INFO - 127.0.0.1 - - [02/Jun/2025 16:51:34] "GET /api/vehicles HTTP/1.1" 200 -
+2025-06-02 16:51:34,998 - INFO - 127.0.0.1 - - [02/Jun/2025 16:51:34] "GET /api/alerts HTTP/1.1" 200 -
+2025-06-02 16:51:34,999 - INFO - 127.0.0.1 - - [02/Jun/2025 16:51:34] "GET /api/stats HTTP/1.1" 200 -
+2025-06-02 16:51:39,667 - INFO - 127.0.0.1 - - [02/Jun/2025 16:51:39] "GET /api/vehicles HTTP/1.1" 200 -
+2025-06-02 16:51:39,985 - INFO - 127.0.0.1 - - [02/Jun/2025 16:51:39] "GET /api/alerts HTTP/1.1" 200 -
+2025-06-02 16:51:39,987 - INFO - 127.0.0.1 - - [02/Jun/2025 16:51:39] "GET /api/stats HTTP/1.1" 200 -
+2025-06-02 16:51:45,147 - INFO - 127.0.0.1 - - [02/Jun/2025 16:51:45] "GET /api/vehicles HTTP/1.1" 200 -
+2025-06-02 16:51:45,467 - INFO - 127.0.0.1 - - [02/Jun/2025 16:51:45] "GET /api/alerts HTTP/1.1" 200 -
+2025-06-02 16:51:45,468 - INFO - 127.0.0.1 - - [02/Jun/2025 16:51:45] "GET /api/stats HTTP/1.1" 200 -
+2025-06-02 16:51:50,160 - INFO - 127.0.0.1 - - [02/Jun/2025 16:51:50] "GET /api/vehicles HTTP/1.1" 200 -
+2025-06-02 16:51:50,496 - INFO - 127.0.0.1 - - [02/Jun/2025 16:51:50] "GET /api/alerts HTTP/1.1" 200 -
+2025-06-02 16:51:50,497 - INFO - 127.0.0.1 - - [02/Jun/2025 16:51:50] "GET /api/stats HTTP/1.1" 200 -
+2025-06-02 16:51:55,163 - INFO - 127.0.0.1 - - [02/Jun/2025 16:51:55] "GET /api/vehicles HTTP/1.1" 200 -
+2025-06-02 16:51:55,494 - INFO - 127.0.0.1 - - [02/Jun/2025 16:51:55] "GET /api/alerts HTTP/1.1" 200 -
+2025-06-02 16:51:55,495 - INFO - 127.0.0.1 - - [02/Jun/2025 16:51:55] "GET /api/stats HTTP/1.1" 200 -
+2025-06-02 16:52:00,161 - INFO - 127.0.0.1 - - [02/Jun/2025 16:52:00] "GET /api/vehicles HTTP/1.1" 200 -
+2025-06-02 16:52:00,479 - INFO - 127.0.0.1 - - [02/Jun/2025 16:52:00] "GET /api/alerts HTTP/1.1" 200 -
+2025-06-02 16:52:00,480 - INFO - 127.0.0.1 - - [02/Jun/2025 16:52:00] "GET /api/stats HTTP/1.1" 200 -
+2025-06-02 16:52:05,161 - INFO - 127.0.0.1 - - [02/Jun/2025 16:52:05] "GET /api/vehicles HTTP/1.1" 200 -
+2025-06-02 16:52:05,487 - INFO - 127.0.0.1 - - [02/Jun/2025 16:52:05] "GET /api/alerts HTTP/1.1" 200 -
+2025-06-02 16:52:05,487 - INFO - 127.0.0.1 - - [02/Jun/2025 16:52:05] "GET /api/stats HTTP/1.1" 200 -
+2025-06-02 16:52:09,656 - INFO - 127.0.0.1 - - [02/Jun/2025 16:52:09] "GET /api/vehicles HTTP/1.1" 200 -
+2025-06-02 16:52:09,977 - INFO - 127.0.0.1 - - [02/Jun/2025 16:52:09] "GET /api/alerts HTTP/1.1" 200 -
+2025-06-02 16:52:09,978 - INFO - 127.0.0.1 - - [02/Jun/2025 16:52:09] "GET /api/stats HTTP/1.1" 200 -
+2025-06-02 16:52:14,662 - INFO - 127.0.0.1 - - [02/Jun/2025 16:52:14] "GET /api/vehicles HTTP/1.1" 200 -
+2025-06-02 16:52:14,983 - INFO - 127.0.0.1 - - [02/Jun/2025 16:52:14] "GET /api/alerts HTTP/1.1" 200 -
+2025-06-02 16:52:14,984 - INFO - 127.0.0.1 - - [02/Jun/2025 16:52:14] "GET /api/stats HTTP/1.1" 200 -
+2025-06-02 16:52:20,150 - INFO - 127.0.0.1 - - [02/Jun/2025 16:52:20] "GET /api/vehicles HTTP/1.1" 200 -
+2025-06-02 16:52:20,473 - INFO - 127.0.0.1 - - [02/Jun/2025 16:52:20] "GET /api/alerts HTTP/1.1" 200 -
+2025-06-02 16:52:20,474 - INFO - 127.0.0.1 - - [02/Jun/2025 16:52:20] "GET /api/stats HTTP/1.1" 200 -
+2025-06-02 16:52:25,158 - INFO - 127.0.0.1 - - [02/Jun/2025 16:52:25] "GET /api/vehicles HTTP/1.1" 200 -
+2025-06-02 16:52:25,489 - INFO - 127.0.0.1 - - [02/Jun/2025 16:52:25] "GET /api/alerts HTTP/1.1" 200 -
+2025-06-02 16:52:25,490 - INFO - 127.0.0.1 - - [02/Jun/2025 16:52:25] "GET /api/stats HTTP/1.1" 200 -
+2025-06-02 16:52:43,288 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+2025-06-02 16:52:43,288 - INFO - [33mPress CTRL+C to quit[0m
+2025-06-02 16:52:43,289 - INFO -  * Restarting with stat
+2025-06-02 16:52:43,487 - WARNING -  * Debugger is active!
+2025-06-02 16:52:43,490 - INFO -  * Debugger PIN: 771-455-585
+2025-06-02 16:52:44,245 - INFO - 127.0.0.1 - - [02/Jun/2025 16:52:44] "GET /api/vehicles HTTP/1.1" 200 -
+2025-06-02 16:52:44,250 - INFO - 127.0.0.1 - - [02/Jun/2025 16:52:44] "GET /api/stats HTTP/1.1" 200 -
+2025-06-02 16:52:44,258 - INFO - 127.0.0.1 - - [02/Jun/2025 16:52:44] "GET /api/alerts HTTP/1.1" 200 -
+2025-06-02 16:52:48,941 - INFO - 127.0.0.1 - - [02/Jun/2025 16:52:48] "GET /api/vehicles HTTP/1.1" 200 -
+2025-06-02 16:52:49,257 - INFO - 127.0.0.1 - - [02/Jun/2025 16:52:49] "GET /api/alerts HTTP/1.1" 200 -
+2025-06-02 16:52:49,258 - INFO - 127.0.0.1 - - [02/Jun/2025 16:52:49] "GET /api/stats HTTP/1.1" 200 -
+2025-06-02 16:52:54,148 - INFO - 127.0.0.1 - - [02/Jun/2025 16:52:54] "GET /api/vehicles HTTP/1.1" 200 -
+2025-06-02 16:52:54,471 - INFO - 127.0.0.1 - - [02/Jun/2025 16:52:54] "GET /api/alerts HTTP/1.1" 200 -
+2025-06-02 16:52:54,472 - INFO - 127.0.0.1 - - [02/Jun/2025 16:52:54] "GET /api/stats HTTP/1.1" 200 -
