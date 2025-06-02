@@ -105,3 +105,254 @@
 2025-06-02 16:52:54,148 - INFO - 127.0.0.1 - - [02/Jun/2025 16:52:54] "GET /api/vehicles HTTP/1.1" 200 -
 2025-06-02 16:52:54,471 - INFO - 127.0.0.1 - - [02/Jun/2025 16:52:54] "GET /api/alerts HTTP/1.1" 200 -
 2025-06-02 16:52:54,472 - INFO - 127.0.0.1 - - [02/Jun/2025 16:52:54] "GET /api/stats HTTP/1.1" 200 -
+2025-06-02 16:57:05,109 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+2025-06-02 16:57:05,109 - INFO - [33mPress CTRL+C to quit[0m
+2025-06-02 16:57:05,111 - INFO -  * Restarting with stat
+2025-06-02 16:57:05,549 - WARNING -  * Debugger is active!
+2025-06-02 16:57:05,565 - INFO -  * Debugger PIN: 771-455-585
+2025-06-02 16:57:05,602 - INFO - 127.0.0.1 - - [02/Jun/2025 16:57:05] "GET /api/vehicles HTTP/1.1" 200 -
+2025-06-02 16:57:05,603 - ERROR - Error fetching alerts: no such table: unauthorized_exit_alerts
+2025-06-02 16:57:05,605 - INFO - 127.0.0.1 - - [02/Jun/2025 16:57:05] "[35m[1mGET /api/alerts HTTP/1.1[0m" 500 -
+2025-06-02 16:57:05,610 - ERROR - Error fetching stats: no such table: unauthorized_exit_alerts
+2025-06-02 16:57:05,610 - INFO - 127.0.0.1 - - [02/Jun/2025 16:57:05] "[35m[1mGET /api/stats HTTP/1.1[0m" 500 -
+2025-06-02 16:57:08,933 - INFO - 127.0.0.1 - - [02/Jun/2025 16:57:08] "GET /api/vehicles HTTP/1.1" 200 -
+2025-06-02 16:57:09,254 - ERROR - Error fetching stats: no such table: unauthorized_exit_alerts
+2025-06-02 16:57:09,255 - INFO - 127.0.0.1 - - [02/Jun/2025 16:57:09] "[35m[1mGET /api/stats HTTP/1.1[0m" 500 -
+2025-06-02 16:57:09,267 - ERROR - Error fetching alerts: no such table: unauthorized_exit_alerts
+2025-06-02 16:57:09,267 - INFO - 127.0.0.1 - - [02/Jun/2025 16:57:09] "[35m[1mGET /api/alerts HTTP/1.1[0m" 500 -
+2025-06-02 16:57:13,941 - INFO - 127.0.0.1 - - [02/Jun/2025 16:57:13] "GET /api/vehicles HTTP/1.1" 200 -
+2025-06-02 16:57:14,262 - ERROR - Error fetching alerts: no such table: unauthorized_exit_alerts
+2025-06-02 16:57:14,263 - INFO - 127.0.0.1 - - [02/Jun/2025 16:57:14] "[35m[1mGET /api/alerts HTTP/1.1[0m" 500 -
+2025-06-02 16:57:14,263 - ERROR - Error fetching stats: no such table: unauthorized_exit_alerts
+2025-06-02 16:57:14,264 - INFO - 127.0.0.1 - - [02/Jun/2025 16:57:14] "[35m[1mGET /api/stats HTTP/1.1[0m" 500 -
+2025-06-02 16:57:18,942 - INFO - 127.0.0.1 - - [02/Jun/2025 16:57:18] "GET /api/vehicles HTTP/1.1" 200 -
+2025-06-02 16:57:19,264 - ERROR - Error fetching alerts: no such table: unauthorized_exit_alerts
+2025-06-02 16:57:19,264 - INFO - 127.0.0.1 - - [02/Jun/2025 16:57:19] "[35m[1mGET /api/alerts HTTP/1.1[0m" 500 -
+2025-06-02 16:57:19,264 - ERROR - Error fetching stats: no such table: unauthorized_exit_alerts
+2025-06-02 16:57:19,265 - INFO - 127.0.0.1 - - [02/Jun/2025 16:57:19] "[35m[1mGET /api/stats HTTP/1.1[0m" 500 -
+2025-06-02 16:57:24,164 - INFO - 127.0.0.1 - - [02/Jun/2025 16:57:24] "GET /api/vehicles HTTP/1.1" 200 -
+2025-06-02 16:57:24,492 - ERROR - Error fetching alerts: no such table: unauthorized_exit_alerts
+2025-06-02 16:57:24,492 - INFO - 127.0.0.1 - - [02/Jun/2025 16:57:24] "[35m[1mGET /api/alerts HTTP/1.1[0m" 500 -
+2025-06-02 16:57:24,493 - ERROR - Error fetching stats: no such table: unauthorized_exit_alerts
+2025-06-02 16:57:24,494 - INFO - 127.0.0.1 - - [02/Jun/2025 16:57:24] "[35m[1mGET /api/stats HTTP/1.1[0m" 500 -
+2025-06-02 16:57:29,213 - INFO - 127.0.0.1 - - [02/Jun/2025 16:57:29] "GET /api/vehicles HTTP/1.1" 200 -
+2025-06-02 16:57:29,536 - ERROR - Error fetching alerts: no such table: unauthorized_exit_alerts
+2025-06-02 16:57:29,536 - INFO - 127.0.0.1 - - [02/Jun/2025 16:57:29] "[35m[1mGET /api/alerts HTTP/1.1[0m" 500 -
+2025-06-02 16:57:29,537 - ERROR - Error fetching stats: no such table: unauthorized_exit_alerts
+2025-06-02 16:57:29,538 - INFO - 127.0.0.1 - - [02/Jun/2025 16:57:29] "[35m[1mGET /api/stats HTTP/1.1[0m" 500 -
+2025-06-02 16:57:34,157 - INFO - 127.0.0.1 - - [02/Jun/2025 16:57:34] "GET /api/vehicles HTTP/1.1" 200 -
+2025-06-02 16:57:34,489 - ERROR - Error fetching alerts: no such table: unauthorized_exit_alerts
+2025-06-02 16:57:34,490 - INFO - 127.0.0.1 - - [02/Jun/2025 16:57:34] "[35m[1mGET /api/alerts HTTP/1.1[0m" 500 -
+2025-06-02 16:57:34,490 - ERROR - Error fetching stats: no such table: unauthorized_exit_alerts
+2025-06-02 16:57:34,491 - INFO - 127.0.0.1 - - [02/Jun/2025 16:57:34] "[35m[1mGET /api/stats HTTP/1.1[0m" 500 -
+2025-06-02 16:57:39,162 - INFO - 127.0.0.1 - - [02/Jun/2025 16:57:39] "GET /api/vehicles HTTP/1.1" 200 -
+2025-06-02 16:57:39,483 - ERROR - Error fetching alerts: no such table: unauthorized_exit_alerts
+2025-06-02 16:57:39,484 - INFO - 127.0.0.1 - - [02/Jun/2025 16:57:39] "[35m[1mGET /api/alerts HTTP/1.1[0m" 500 -
+2025-06-02 16:57:39,485 - ERROR - Error fetching stats: no such table: unauthorized_exit_alerts
+2025-06-02 16:57:39,485 - INFO - 127.0.0.1 - - [02/Jun/2025 16:57:39] "[35m[1mGET /api/stats HTTP/1.1[0m" 500 -
+2025-06-02 16:57:44,153 - INFO - 127.0.0.1 - - [02/Jun/2025 16:57:44] "GET /api/vehicles HTTP/1.1" 200 -
+2025-06-02 16:57:44,468 - ERROR - Error fetching alerts: no such table: unauthorized_exit_alerts
+2025-06-02 16:57:44,468 - INFO - 127.0.0.1 - - [02/Jun/2025 16:57:44] "[35m[1mGET /api/alerts HTTP/1.1[0m" 500 -
+2025-06-02 16:57:44,472 - ERROR - Error fetching stats: no such table: unauthorized_exit_alerts
+2025-06-02 16:57:44,472 - INFO - 127.0.0.1 - - [02/Jun/2025 16:57:44] "[35m[1mGET /api/stats HTTP/1.1[0m" 500 -
+2025-06-02 16:57:49,153 - INFO - 127.0.0.1 - - [02/Jun/2025 16:57:49] "GET /api/vehicles HTTP/1.1" 200 -
+2025-06-02 16:57:49,471 - ERROR - Error fetching alerts: no such table: unauthorized_exit_alerts
+2025-06-02 16:57:49,471 - INFO - 127.0.0.1 - - [02/Jun/2025 16:57:49] "[35m[1mGET /api/alerts HTTP/1.1[0m" 500 -
+2025-06-02 16:57:49,472 - ERROR - Error fetching stats: no such table: unauthorized_exit_alerts
+2025-06-02 16:57:49,472 - INFO - 127.0.0.1 - - [02/Jun/2025 16:57:49] "[35m[1mGET /api/stats HTTP/1.1[0m" 500 -
+2025-06-02 16:57:54,156 - INFO - 127.0.0.1 - - [02/Jun/2025 16:57:54] "GET /api/vehicles HTTP/1.1" 200 -
+2025-06-02 16:57:54,468 - ERROR - Error fetching alerts: no such table: unauthorized_exit_alerts
+2025-06-02 16:57:54,469 - INFO - 127.0.0.1 - - [02/Jun/2025 16:57:54] "[35m[1mGET /api/alerts HTTP/1.1[0m" 500 -
+2025-06-02 16:57:54,470 - ERROR - Error fetching stats: no such table: unauthorized_exit_alerts
+2025-06-02 16:57:54,470 - INFO - 127.0.0.1 - - [02/Jun/2025 16:57:54] "[35m[1mGET /api/stats HTTP/1.1[0m" 500 -
+2025-06-02 16:57:59,149 - INFO - 127.0.0.1 - - [02/Jun/2025 16:57:59] "GET /api/vehicles HTTP/1.1" 200 -
+2025-06-02 16:57:59,468 - ERROR - Error fetching alerts: no such table: unauthorized_exit_alerts
+2025-06-02 16:57:59,469 - INFO - 127.0.0.1 - - [02/Jun/2025 16:57:59] "[35m[1mGET /api/alerts HTTP/1.1[0m" 500 -
+2025-06-02 16:57:59,470 - ERROR - Error fetching stats: no such table: unauthorized_exit_alerts
+2025-06-02 16:57:59,471 - INFO - 127.0.0.1 - - [02/Jun/2025 16:57:59] "[35m[1mGET /api/stats HTTP/1.1[0m" 500 -
+2025-06-02 16:58:04,158 - INFO - 127.0.0.1 - - [02/Jun/2025 16:58:04] "GET /api/vehicles HTTP/1.1" 200 -
+2025-06-02 16:58:04,475 - ERROR - Error fetching alerts: no such table: unauthorized_exit_alerts
+2025-06-02 16:58:04,476 - INFO - 127.0.0.1 - - [02/Jun/2025 16:58:04] "[35m[1mGET /api/alerts HTTP/1.1[0m" 500 -
+2025-06-02 16:58:04,477 - ERROR - Error fetching stats: no such table: unauthorized_exit_alerts
+2025-06-02 16:58:04,477 - INFO - 127.0.0.1 - - [02/Jun/2025 16:58:04] "[35m[1mGET /api/stats HTTP/1.1[0m" 500 -
+2025-06-02 16:58:09,147 - INFO - 127.0.0.1 - - [02/Jun/2025 16:58:09] "GET /api/vehicles HTTP/1.1" 200 -
+2025-06-02 16:58:09,466 - ERROR - Error fetching alerts: no such table: unauthorized_exit_alerts
+2025-06-02 16:58:09,467 - INFO - 127.0.0.1 - - [02/Jun/2025 16:58:09] "[35m[1mGET /api/alerts HTTP/1.1[0m" 500 -
+2025-06-02 16:58:09,480 - ERROR - Error fetching stats: no such table: unauthorized_exit_alerts
+2025-06-02 16:58:09,481 - INFO - 127.0.0.1 - - [02/Jun/2025 16:58:09] "[35m[1mGET /api/stats HTTP/1.1[0m" 500 -
+2025-06-02 16:58:14,165 - INFO - 127.0.0.1 - - [02/Jun/2025 16:58:14] "GET /api/vehicles HTTP/1.1" 200 -
+2025-06-02 16:58:14,497 - ERROR - Error fetching alerts: no such table: unauthorized_exit_alerts
+2025-06-02 16:58:14,498 - INFO - 127.0.0.1 - - [02/Jun/2025 16:58:14] "[35m[1mGET /api/alerts HTTP/1.1[0m" 500 -
+2025-06-02 16:58:14,498 - ERROR - Error fetching stats: no such table: unauthorized_exit_alerts
+2025-06-02 16:58:14,498 - INFO - 127.0.0.1 - - [02/Jun/2025 16:58:14] "[35m[1mGET /api/stats HTTP/1.1[0m" 500 -
+2025-06-02 16:58:19,162 - INFO - 127.0.0.1 - - [02/Jun/2025 16:58:19] "GET /api/vehicles HTTP/1.1" 200 -
+2025-06-02 16:58:19,492 - ERROR - Error fetching alerts: no such table: unauthorized_exit_alerts
+2025-06-02 16:58:19,492 - INFO - 127.0.0.1 - - [02/Jun/2025 16:58:19] "[35m[1mGET /api/alerts HTTP/1.1[0m" 500 -
+2025-06-02 16:58:19,492 - ERROR - Error fetching stats: no such table: unauthorized_exit_alerts
+2025-06-02 16:58:19,493 - INFO - 127.0.0.1 - - [02/Jun/2025 16:58:19] "[35m[1mGET /api/stats HTTP/1.1[0m" 500 -
+2025-06-02 16:58:24,155 - INFO - 127.0.0.1 - - [02/Jun/2025 16:58:24] "GET /api/vehicles HTTP/1.1" 200 -
+2025-06-02 16:58:24,475 - ERROR - Error fetching alerts: no such table: unauthorized_exit_alerts
+2025-06-02 16:58:24,476 - INFO - 127.0.0.1 - - [02/Jun/2025 16:58:24] "[35m[1mGET /api/alerts HTTP/1.1[0m" 500 -
+2025-06-02 16:58:24,481 - ERROR - Error fetching stats: no such table: unauthorized_exit_alerts
+2025-06-02 16:58:24,481 - INFO - 127.0.0.1 - - [02/Jun/2025 16:58:24] "[35m[1mGET /api/stats HTTP/1.1[0m" 500 -
+2025-06-02 16:58:29,154 - INFO - 127.0.0.1 - - [02/Jun/2025 16:58:29] "GET /api/vehicles HTTP/1.1" 200 -
+2025-06-02 16:58:29,477 - ERROR - Error fetching alerts: no such table: unauthorized_exit_alerts
+2025-06-02 16:58:29,478 - INFO - 127.0.0.1 - - [02/Jun/2025 16:58:29] "[35m[1mGET /api/alerts HTTP/1.1[0m" 500 -
+2025-06-02 16:58:29,479 - ERROR - Error fetching stats: no such table: unauthorized_exit_alerts
+2025-06-02 16:58:29,480 - INFO - 127.0.0.1 - - [02/Jun/2025 16:58:29] "[35m[1mGET /api/stats HTTP/1.1[0m" 500 -
+2025-06-02 16:58:34,161 - INFO - 127.0.0.1 - - [02/Jun/2025 16:58:34] "GET /api/vehicles HTTP/1.1" 200 -
+2025-06-02 16:58:34,487 - ERROR - Error fetching alerts: no such table: unauthorized_exit_alerts
+2025-06-02 16:58:34,487 - INFO - 127.0.0.1 - - [02/Jun/2025 16:58:34] "[35m[1mGET /api/alerts HTTP/1.1[0m" 500 -
+2025-06-02 16:58:34,489 - ERROR - Error fetching stats: no such table: unauthorized_exit_alerts
+2025-06-02 16:58:34,489 - INFO - 127.0.0.1 - - [02/Jun/2025 16:58:34] "[35m[1mGET /api/stats HTTP/1.1[0m" 500 -
+2025-06-02 16:58:39,746 - INFO - 127.0.0.1 - - [02/Jun/2025 16:58:39] "GET /api/vehicles HTTP/1.1" 200 -
+2025-06-02 16:58:39,746 - ERROR - Error fetching alerts: no such table: unauthorized_exit_alerts
+2025-06-02 16:58:39,747 - INFO - 127.0.0.1 - - [02/Jun/2025 16:58:39] "[35m[1mGET /api/alerts HTTP/1.1[0m" 500 -
+2025-06-02 16:58:39,756 - ERROR - Error fetching stats: no such table: unauthorized_exit_alerts
+2025-06-02 16:58:39,756 - INFO - 127.0.0.1 - - [02/Jun/2025 16:58:39] "[35m[1mGET /api/stats HTTP/1.1[0m" 500 -
+2025-06-02 16:58:44,153 - INFO - 127.0.0.1 - - [02/Jun/2025 16:58:44] "GET /api/vehicles HTTP/1.1" 200 -
+2025-06-02 16:58:44,474 - ERROR - Error fetching alerts: no such table: unauthorized_exit_alerts
+2025-06-02 16:58:44,475 - INFO - 127.0.0.1 - - [02/Jun/2025 16:58:44] "[35m[1mGET /api/alerts HTTP/1.1[0m" 500 -
+2025-06-02 16:58:44,476 - ERROR - Error fetching stats: no such table: unauthorized_exit_alerts
+2025-06-02 16:58:44,477 - INFO - 127.0.0.1 - - [02/Jun/2025 16:58:44] "[35m[1mGET /api/stats HTTP/1.1[0m" 500 -
+2025-06-02 16:58:49,164 - INFO - 127.0.0.1 - - [02/Jun/2025 16:58:49] "GET /api/vehicles HTTP/1.1" 200 -
+2025-06-02 16:58:49,495 - ERROR - Error fetching alerts: no such table: unauthorized_exit_alerts
+2025-06-02 16:58:49,495 - INFO - 127.0.0.1 - - [02/Jun/2025 16:58:49] "[35m[1mGET /api/alerts HTTP/1.1[0m" 500 -
+2025-06-02 16:58:49,495 - ERROR - Error fetching stats: no such table: unauthorized_exit_alerts
+2025-06-02 16:58:49,496 - INFO - 127.0.0.1 - - [02/Jun/2025 16:58:49] "[35m[1mGET /api/stats HTTP/1.1[0m" 500 -
+2025-06-02 16:59:36,569 - INFO - 127.0.0.1 - - [02/Jun/2025 16:59:36] "GET /api/vehicles HTTP/1.1" 200 -
+2025-06-02 16:59:36,890 - INFO - 127.0.0.1 - - [02/Jun/2025 16:59:36] "GET /api/alerts HTTP/1.1" 200 -
+2025-06-02 16:59:36,891 - INFO - 127.0.0.1 - - [02/Jun/2025 16:59:36] "GET /api/stats HTTP/1.1" 200 -
+2025-06-02 16:59:38,925 - INFO - 127.0.0.1 - - [02/Jun/2025 16:59:38] "GET /api/vehicles HTTP/1.1" 200 -
+2025-06-02 16:59:39,244 - INFO - 127.0.0.1 - - [02/Jun/2025 16:59:39] "GET /api/alerts HTTP/1.1" 200 -
+2025-06-02 16:59:39,245 - INFO - 127.0.0.1 - - [02/Jun/2025 16:59:39] "GET /api/stats HTTP/1.1" 200 -
+2025-06-02 16:59:46,236 - INFO - 127.0.0.1 - - [02/Jun/2025 16:59:46] "GET /api/alerts HTTP/1.1" 200 -
+2025-06-02 16:59:46,237 - INFO - 127.0.0.1 - - [02/Jun/2025 16:59:46] "GET /api/vehicles HTTP/1.1" 200 -
+2025-06-02 16:59:46,237 - INFO - 127.0.0.1 - - [02/Jun/2025 16:59:46] "GET /api/stats HTTP/1.1" 200 -
+2025-06-02 16:59:48,930 - INFO - 127.0.0.1 - - [02/Jun/2025 16:59:48] "GET /api/vehicles HTTP/1.1" 200 -
+2025-06-02 16:59:49,253 - INFO - 127.0.0.1 - - [02/Jun/2025 16:59:49] "GET /api/alerts HTTP/1.1" 200 -
+2025-06-02 16:59:49,254 - INFO - 127.0.0.1 - - [02/Jun/2025 16:59:49] "GET /api/stats HTTP/1.1" 200 -
+2025-06-02 16:59:54,155 - INFO - 127.0.0.1 - - [02/Jun/2025 16:59:54] "GET /api/vehicles HTTP/1.1" 200 -
+2025-06-02 16:59:54,476 - INFO - 127.0.0.1 - - [02/Jun/2025 16:59:54] "GET /api/alerts HTTP/1.1" 200 -
+2025-06-02 16:59:54,477 - INFO - 127.0.0.1 - - [02/Jun/2025 16:59:54] "GET /api/stats HTTP/1.1" 200 -
+2025-06-02 16:59:59,158 - INFO - 127.0.0.1 - - [02/Jun/2025 16:59:59] "GET /api/vehicles HTTP/1.1" 200 -
+2025-06-02 16:59:59,490 - INFO - 127.0.0.1 - - [02/Jun/2025 16:59:59] "GET /api/alerts HTTP/1.1" 200 -
+2025-06-02 16:59:59,491 - INFO - 127.0.0.1 - - [02/Jun/2025 16:59:59] "GET /api/stats HTTP/1.1" 200 -
+2025-06-02 17:00:04,162 - INFO - 127.0.0.1 - - [02/Jun/2025 17:00:04] "GET /api/vehicles HTTP/1.1" 200 -
+2025-06-02 17:00:04,478 - INFO - 127.0.0.1 - - [02/Jun/2025 17:00:04] "GET /api/alerts HTTP/1.1" 200 -
+2025-06-02 17:00:04,479 - INFO - 127.0.0.1 - - [02/Jun/2025 17:00:04] "GET /api/stats HTTP/1.1" 200 -
+2025-06-02 17:00:09,159 - INFO - 127.0.0.1 - - [02/Jun/2025 17:00:09] "GET /api/vehicles HTTP/1.1" 200 -
+2025-06-02 17:00:09,473 - INFO - 127.0.0.1 - - [02/Jun/2025 17:00:09] "GET /api/alerts HTTP/1.1" 200 -
+2025-06-02 17:00:09,474 - INFO - 127.0.0.1 - - [02/Jun/2025 17:00:09] "GET /api/stats HTTP/1.1" 200 -
+2025-06-02 17:00:14,157 - INFO - 127.0.0.1 - - [02/Jun/2025 17:00:14] "GET /api/vehicles HTTP/1.1" 200 -
+2025-06-02 17:00:14,475 - INFO - 127.0.0.1 - - [02/Jun/2025 17:00:14] "GET /api/alerts HTTP/1.1" 200 -
+2025-06-02 17:00:14,477 - INFO - 127.0.0.1 - - [02/Jun/2025 17:00:14] "GET /api/stats HTTP/1.1" 200 -
+2025-06-02 17:00:19,518 - INFO - 127.0.0.1 - - [02/Jun/2025 17:00:19] "GET /api/vehicles HTTP/1.1" 200 -
+2025-06-02 17:00:19,709 - INFO - 127.0.0.1 - - [02/Jun/2025 17:00:19] "GET /api/stats HTTP/1.1" 200 -
+2025-06-02 17:00:19,710 - INFO - 127.0.0.1 - - [02/Jun/2025 17:00:19] "GET /api/alerts HTTP/1.1" 200 -
+2025-06-02 17:00:27,713 - INFO - 127.0.0.1 - - [02/Jun/2025 17:00:27] "GET /api/alerts HTTP/1.1" 200 -
+2025-06-02 17:00:27,713 - INFO - 127.0.0.1 - - [02/Jun/2025 17:00:27] "GET /api/vehicles HTTP/1.1" 200 -
+2025-06-02 17:00:27,716 - INFO - 127.0.0.1 - - [02/Jun/2025 17:00:27] "GET /api/stats HTTP/1.1" 200 -
+2025-06-02 17:00:29,151 - INFO - 127.0.0.1 - - [02/Jun/2025 17:00:29] "GET /api/vehicles HTTP/1.1" 200 -
+2025-06-02 17:00:29,470 - INFO - 127.0.0.1 - - [02/Jun/2025 17:00:29] "GET /api/alerts HTTP/1.1" 200 -
+2025-06-02 17:00:29,483 - INFO - 127.0.0.1 - - [02/Jun/2025 17:00:29] "GET /api/stats HTTP/1.1" 200 -
+2025-06-02 17:00:34,150 - INFO - 127.0.0.1 - - [02/Jun/2025 17:00:34] "GET /api/vehicles HTTP/1.1" 200 -
+2025-06-02 17:00:34,471 - INFO - 127.0.0.1 - - [02/Jun/2025 17:00:34] "GET /api/alerts HTTP/1.1" 200 -
+2025-06-02 17:00:34,473 - INFO - 127.0.0.1 - - [02/Jun/2025 17:00:34] "GET /api/stats HTTP/1.1" 200 -
+2025-06-02 17:00:39,152 - INFO - 127.0.0.1 - - [02/Jun/2025 17:00:39] "GET /api/vehicles HTTP/1.1" 200 -
+2025-06-02 17:00:39,471 - INFO - 127.0.0.1 - - [02/Jun/2025 17:00:39] "GET /api/alerts HTTP/1.1" 200 -
+2025-06-02 17:00:39,485 - INFO - 127.0.0.1 - - [02/Jun/2025 17:00:39] "GET /api/stats HTTP/1.1" 200 -
+2025-06-02 17:00:44,148 - INFO - 127.0.0.1 - - [02/Jun/2025 17:00:44] "GET /api/vehicles HTTP/1.1" 200 -
+2025-06-02 17:00:44,468 - INFO - 127.0.0.1 - - [02/Jun/2025 17:00:44] "GET /api/alerts HTTP/1.1" 200 -
+2025-06-02 17:00:44,470 - INFO - 127.0.0.1 - - [02/Jun/2025 17:00:44] "GET /api/stats HTTP/1.1" 200 -
+2025-06-02 17:00:49,154 - INFO - 127.0.0.1 - - [02/Jun/2025 17:00:49] "GET /api/vehicles HTTP/1.1" 200 -
+2025-06-02 17:00:49,471 - INFO - 127.0.0.1 - - [02/Jun/2025 17:00:49] "GET /api/alerts HTTP/1.1" 200 -
+2025-06-02 17:00:49,472 - INFO - 127.0.0.1 - - [02/Jun/2025 17:00:49] "GET /api/stats HTTP/1.1" 200 -
+2025-06-02 17:01:15,629 - INFO - 127.0.0.1 - - [02/Jun/2025 17:01:15] "GET /api/vehicles HTTP/1.1" 200 -
+2025-06-02 17:01:15,954 - INFO - 127.0.0.1 - - [02/Jun/2025 17:01:15] "GET /api/alerts HTTP/1.1" 200 -
+2025-06-02 17:01:15,954 - INFO - 127.0.0.1 - - [02/Jun/2025 17:01:15] "GET /api/stats HTTP/1.1" 200 -
+2025-06-02 17:01:18,931 - INFO - 127.0.0.1 - - [02/Jun/2025 17:01:18] "GET /api/vehicles HTTP/1.1" 200 -
+2025-06-02 17:01:19,247 - INFO - 127.0.0.1 - - [02/Jun/2025 17:01:19] "GET /api/alerts HTTP/1.1" 200 -
+2025-06-02 17:01:19,247 - INFO - 127.0.0.1 - - [02/Jun/2025 17:01:19] "GET /api/stats HTTP/1.1" 200 -
+2025-06-02 17:01:23,934 - INFO - 127.0.0.1 - - [02/Jun/2025 17:01:23] "GET /api/vehicles HTTP/1.1" 200 -
+2025-06-02 17:01:24,251 - INFO - 127.0.0.1 - - [02/Jun/2025 17:01:24] "GET /api/alerts HTTP/1.1" 200 -
+2025-06-02 17:01:24,252 - INFO - 127.0.0.1 - - [02/Jun/2025 17:01:24] "GET /api/stats HTTP/1.1" 200 -
+2025-06-02 17:01:29,175 - INFO - 127.0.0.1 - - [02/Jun/2025 17:01:29] "GET /api/vehicles HTTP/1.1" 200 -
+2025-06-02 17:01:29,488 - INFO - 127.0.0.1 - - [02/Jun/2025 17:01:29] "GET /api/alerts HTTP/1.1" 200 -
+2025-06-02 17:01:29,489 - INFO - 127.0.0.1 - - [02/Jun/2025 17:01:29] "GET /api/stats HTTP/1.1" 200 -
+2025-06-02 17:01:34,152 - INFO - 127.0.0.1 - - [02/Jun/2025 17:01:34] "GET /api/vehicles HTTP/1.1" 200 -
+2025-06-02 17:01:34,477 - INFO - 127.0.0.1 - - [02/Jun/2025 17:01:34] "GET /api/alerts HTTP/1.1" 200 -
+2025-06-02 17:01:34,478 - INFO - 127.0.0.1 - - [02/Jun/2025 17:01:34] "GET /api/stats HTTP/1.1" 200 -
+2025-06-02 17:01:39,153 - INFO - 127.0.0.1 - - [02/Jun/2025 17:01:39] "GET /api/vehicles HTTP/1.1" 200 -
+2025-06-02 17:01:39,474 - INFO - 127.0.0.1 - - [02/Jun/2025 17:01:39] "GET /api/alerts HTTP/1.1" 200 -
+2025-06-02 17:01:39,475 - INFO - 127.0.0.1 - - [02/Jun/2025 17:01:39] "GET /api/stats HTTP/1.1" 200 -
+2025-06-02 17:01:44,153 - INFO - 127.0.0.1 - - [02/Jun/2025 17:01:44] "GET /api/vehicles HTTP/1.1" 200 -
+2025-06-02 17:01:44,475 - INFO - 127.0.0.1 - - [02/Jun/2025 17:01:44] "GET /api/alerts HTTP/1.1" 200 -
+2025-06-02 17:01:44,476 - INFO - 127.0.0.1 - - [02/Jun/2025 17:01:44] "GET /api/stats HTTP/1.1" 200 -
+2025-06-02 17:01:49,150 - INFO - 127.0.0.1 - - [02/Jun/2025 17:01:49] "GET /api/vehicles HTTP/1.1" 200 -
+2025-06-02 17:01:49,469 - INFO - 127.0.0.1 - - [02/Jun/2025 17:01:49] "GET /api/alerts HTTP/1.1" 200 -
+2025-06-02 17:01:49,481 - INFO - 127.0.0.1 - - [02/Jun/2025 17:01:49] "GET /api/stats HTTP/1.1" 200 -
+2025-06-02 17:01:54,155 - INFO - 127.0.0.1 - - [02/Jun/2025 17:01:54] "GET /api/vehicles HTTP/1.1" 200 -
+2025-06-02 17:01:54,473 - INFO - 127.0.0.1 - - [02/Jun/2025 17:01:54] "GET /api/alerts HTTP/1.1" 200 -
+2025-06-02 17:01:54,475 - INFO - 127.0.0.1 - - [02/Jun/2025 17:01:54] "GET /api/stats HTTP/1.1" 200 -
+2025-06-02 17:01:59,151 - INFO - 127.0.0.1 - - [02/Jun/2025 17:01:59] "GET /api/vehicles HTTP/1.1" 200 -
+2025-06-02 17:01:59,474 - INFO - 127.0.0.1 - - [02/Jun/2025 17:01:59] "GET /api/alerts HTTP/1.1" 200 -
+2025-06-02 17:01:59,476 - INFO - 127.0.0.1 - - [02/Jun/2025 17:01:59] "GET /api/stats HTTP/1.1" 200 -
+2025-06-02 17:02:04,146 - INFO - 127.0.0.1 - - [02/Jun/2025 17:02:04] "GET /api/vehicles HTTP/1.1" 200 -
+2025-06-02 17:02:04,468 - INFO - 127.0.0.1 - - [02/Jun/2025 17:02:04] "GET /api/alerts HTTP/1.1" 200 -
+2025-06-02 17:02:04,469 - INFO - 127.0.0.1 - - [02/Jun/2025 17:02:04] "GET /api/stats HTTP/1.1" 200 -
+2025-06-02 17:02:09,174 - INFO - 127.0.0.1 - - [02/Jun/2025 17:02:09] "GET /api/vehicles HTTP/1.1" 200 -
+2025-06-02 17:02:09,507 - INFO - 127.0.0.1 - - [02/Jun/2025 17:02:09] "GET /api/alerts HTTP/1.1" 200 -
+2025-06-02 17:02:09,509 - INFO - 127.0.0.1 - - [02/Jun/2025 17:02:09] "GET /api/stats HTTP/1.1" 200 -
+2025-06-02 17:02:14,154 - INFO - 127.0.0.1 - - [02/Jun/2025 17:02:14] "GET /api/vehicles HTTP/1.1" 200 -
+2025-06-02 17:02:14,478 - INFO - 127.0.0.1 - - [02/Jun/2025 17:02:14] "GET /api/alerts HTTP/1.1" 200 -
+2025-06-02 17:02:14,479 - INFO - 127.0.0.1 - - [02/Jun/2025 17:02:14] "GET /api/stats HTTP/1.1" 200 -
+2025-06-02 17:02:19,153 - INFO - 127.0.0.1 - - [02/Jun/2025 17:02:19] "GET /api/vehicles HTTP/1.1" 200 -
+2025-06-02 17:02:19,465 - INFO - 127.0.0.1 - - [02/Jun/2025 17:02:19] "GET /api/alerts HTTP/1.1" 200 -
+2025-06-02 17:02:19,472 - INFO - 127.0.0.1 - - [02/Jun/2025 17:02:19] "GET /api/stats HTTP/1.1" 200 -
+2025-06-02 17:02:24,156 - INFO - 127.0.0.1 - - [02/Jun/2025 17:02:24] "GET /api/vehicles HTTP/1.1" 200 -
+2025-06-02 17:02:24,479 - INFO - 127.0.0.1 - - [02/Jun/2025 17:02:24] "GET /api/alerts HTTP/1.1" 200 -
+2025-06-02 17:02:24,480 - INFO - 127.0.0.1 - - [02/Jun/2025 17:02:24] "GET /api/stats HTTP/1.1" 200 -
+2025-06-02 17:02:37,476 - INFO - 127.0.0.1 - - [02/Jun/2025 17:02:37] "GET /api/vehicles HTTP/1.1" 200 -
+2025-06-02 17:02:37,476 - INFO - 127.0.0.1 - - [02/Jun/2025 17:02:37] "GET /api/alerts HTTP/1.1" 200 -
+2025-06-02 17:02:37,477 - INFO - 127.0.0.1 - - [02/Jun/2025 17:02:37] "GET /api/stats HTTP/1.1" 200 -
+2025-06-02 17:02:47,180 - INFO - 127.0.0.1 - - [02/Jun/2025 17:02:47] "GET /api/vehicles HTTP/1.1" 200 -
+2025-06-02 17:02:47,494 - INFO - 127.0.0.1 - - [02/Jun/2025 17:02:47] "GET /api/alerts HTTP/1.1" 200 -
+2025-06-02 17:02:47,496 - INFO - 127.0.0.1 - - [02/Jun/2025 17:02:47] "GET /api/stats HTTP/1.1" 200 -
+2025-06-02 17:02:53,158 - INFO - 127.0.0.1 - - [02/Jun/2025 17:02:53] "GET /api/vehicles HTTP/1.1" 200 -
+2025-06-02 17:02:53,478 - INFO - 127.0.0.1 - - [02/Jun/2025 17:02:53] "GET /api/alerts HTTP/1.1" 200 -
+2025-06-02 17:02:53,479 - INFO - 127.0.0.1 - - [02/Jun/2025 17:02:53] "GET /api/stats HTTP/1.1" 200 -
+2025-06-02 17:02:58,155 - INFO - 127.0.0.1 - - [02/Jun/2025 17:02:58] "GET /api/vehicles HTTP/1.1" 200 -
+2025-06-02 17:02:58,472 - INFO - 127.0.0.1 - - [02/Jun/2025 17:02:58] "GET /api/alerts HTTP/1.1" 200 -
+2025-06-02 17:02:58,472 - INFO - 127.0.0.1 - - [02/Jun/2025 17:02:58] "GET /api/stats HTTP/1.1" 200 -
+2025-06-02 17:03:03,123 - INFO - 127.0.0.1 - - [02/Jun/2025 17:03:03] "GET /api/vehicles HTTP/1.1" 200 -
+2025-06-02 17:03:03,445 - INFO - 127.0.0.1 - - [02/Jun/2025 17:03:03] "GET /api/alerts HTTP/1.1" 200 -
+2025-06-02 17:03:03,447 - INFO - 127.0.0.1 - - [02/Jun/2025 17:03:03] "GET /api/stats HTTP/1.1" 200 -
+2025-06-02 17:03:07,198 - INFO - 127.0.0.1 - - [02/Jun/2025 17:03:07] "GET /api/vehicles HTTP/1.1" 200 -
+2025-06-02 17:03:07,517 - INFO - 127.0.0.1 - - [02/Jun/2025 17:03:07] "GET /api/alerts HTTP/1.1" 200 -
+2025-06-02 17:03:07,519 - INFO - 127.0.0.1 - - [02/Jun/2025 17:03:07] "GET /api/stats HTTP/1.1" 200 -
+2025-06-02 17:03:12,198 - INFO - 127.0.0.1 - - [02/Jun/2025 17:03:12] "GET /api/vehicles HTTP/1.1" 200 -
+2025-06-02 17:03:12,520 - INFO - 127.0.0.1 - - [02/Jun/2025 17:03:12] "GET /api/alerts HTTP/1.1" 200 -
+2025-06-02 17:03:12,522 - INFO - 127.0.0.1 - - [02/Jun/2025 17:03:12] "GET /api/stats HTTP/1.1" 200 -
+2025-06-02 17:03:18,156 - INFO - 127.0.0.1 - - [02/Jun/2025 17:03:18] "GET /api/vehicles HTTP/1.1" 200 -
+2025-06-02 17:03:18,478 - INFO - 127.0.0.1 - - [02/Jun/2025 17:03:18] "GET /api/stats HTTP/1.1" 200 -
+2025-06-02 17:03:18,491 - INFO - 127.0.0.1 - - [02/Jun/2025 17:03:18] "GET /api/alerts HTTP/1.1" 200 -
+2025-06-02 17:03:23,173 - INFO - 127.0.0.1 - - [02/Jun/2025 17:03:23] "GET /api/vehicles HTTP/1.1" 200 -
+2025-06-02 17:03:23,512 - INFO - 127.0.0.1 - - [02/Jun/2025 17:03:23] "GET /api/stats HTTP/1.1" 200 -
+2025-06-02 17:03:23,526 - INFO - 127.0.0.1 - - [02/Jun/2025 17:03:23] "GET /api/alerts HTTP/1.1" 200 -
+2025-06-02 17:03:28,163 - INFO - 127.0.0.1 - - [02/Jun/2025 17:03:28] "GET /api/vehicles HTTP/1.1" 200 -
+2025-06-02 17:03:28,479 - INFO - 127.0.0.1 - - [02/Jun/2025 17:03:28] "GET /api/alerts HTTP/1.1" 200 -
+2025-06-02 17:03:28,483 - INFO - 127.0.0.1 - - [02/Jun/2025 17:03:28] "GET /api/stats HTTP/1.1" 200 -
+2025-06-02 17:03:33,151 - INFO - 127.0.0.1 - - [02/Jun/2025 17:03:33] "GET /api/vehicles HTTP/1.1" 200 -
+2025-06-02 17:03:33,470 - INFO - 127.0.0.1 - - [02/Jun/2025 17:03:33] "GET /api/alerts HTTP/1.1" 200 -
+2025-06-02 17:03:33,471 - INFO - 127.0.0.1 - - [02/Jun/2025 17:03:33] "GET /api/stats HTTP/1.1" 200 -
+2025-06-02 17:03:38,148 - INFO - 127.0.0.1 - - [02/Jun/2025 17:03:38] "GET /api/vehicles HTTP/1.1" 200 -
+2025-06-02 17:03:38,482 - INFO - 127.0.0.1 - - [02/Jun/2025 17:03:38] "GET /api/alerts HTTP/1.1" 200 -
+2025-06-02 17:03:38,515 - INFO - 127.0.0.1 - - [02/Jun/2025 17:03:38] "GET /api/stats HTTP/1.1" 200 -
+2025-06-02 17:03:43,163 - INFO - 127.0.0.1 - - [02/Jun/2025 17:03:43] "GET /api/vehicles HTTP/1.1" 200 -
+2025-06-02 17:03:43,492 - INFO - 127.0.0.1 - - [02/Jun/2025 17:03:43] "GET /api/stats HTTP/1.1" 200 -
+2025-06-02 17:03:43,505 - INFO - 127.0.0.1 - - [02/Jun/2025 17:03:43] "GET /api/alerts HTTP/1.1" 200 -
+2025-06-02 17:03:47,187 - INFO - 127.0.0.1 - - [02/Jun/2025 17:03:47] "GET /api/vehicles HTTP/1.1" 200 -
+2025-06-02 17:03:47,502 - INFO - 127.0.0.1 - - [02/Jun/2025 17:03:47] "GET /api/alerts HTTP/1.1" 200 -
+2025-06-02 17:03:47,507 - INFO - 127.0.0.1 - - [02/Jun/2025 17:03:47] "GET /api/stats HTTP/1.1" 200 -

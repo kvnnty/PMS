@@ -41,21 +41,6 @@ model.verbose = False  # Turn off YOLO logging
 # === INIT ===
 os.makedirs(SAVE_DIR, exist_ok=True)
 
-def init_db():
-    conn = sqlite3.connect(DB_FILE)
-    cursor = conn.cursor()
-    cursor.execute('''
-        CREATE TABLE IF NOT EXISTS vehicle_log (
-            no INTEGER PRIMARY KEY AUTOINCREMENT,
-            entry_time TEXT,
-            exit_time TEXT,
-            car_plate TEXT,
-            due_payment TEXT,
-            payment_status TEXT
-        )
-    ''')
-    conn.commit()
-    conn.close()
 
 def detect_arduino_port():
     for port in serial.tools.list_ports.comports():
@@ -92,11 +77,11 @@ def insert_vehicle_log(plate):
     conn = sqlite3.connect(DB_FILE)
     cursor = conn.cursor()
     cursor.execute('''
-        INSERT INTO vehicle_log (entry_time, exit_time, car_plate, due_payment, payment_status)
-        VALUES (?, ?, ?, ?, ?)
+        INSERT INTO vehicle_log (entry_time, exit_time, car_plate, due_payment, payment_status, is_exited)
+        VALUES (?, ?, ?, ?, ?, ?)
     ''', (
         time.strftime('%Y-%m-%d %H:%M:%S'),
-        '', plate, '', '0'
+        '', plate, '', '0', '0'
     ))
     conn.commit()
     conn.close()
@@ -109,8 +94,7 @@ def signal_handler(sig, frame):
 signal.signal(signal.SIGINT, signal_handler)
 
 def main():
-    init_db()
-
+    
     # === Arduino Init ===
     arduino_port = detect_arduino_port()
     arduino = None

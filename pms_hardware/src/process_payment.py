@@ -49,7 +49,7 @@ def process_payment(plate, balance, ser):
         row = cursor.fetchone()
 
         if not row:
-            print("[PAYMENT] No unpaid record found for plate.")
+            print("[PAYMENT] No unpaid record found for this vehicle.")
             return
 
         record_id, entry_time_str = row
@@ -80,23 +80,18 @@ def process_payment(plate, balance, ser):
 
         # Send balance and wait for confirmation
         ser.write(f"{new_balance}\r\n".encode())
-        print(f"[ARDUINO] Sent new balance: {new_balance}")
 
         start_time = time.time()
         while True:
             if ser.in_waiting:
                 response = ser.readline().decode().strip()
-                print(f"[ARDUINO] {response}")
                 if "DONE" in response:
-                    print("[ARDUINO] Write confirmed")
-
-                    # Update DB
+                    # Update DB - do NOT update exit_time
                     cursor.execute('''
                         UPDATE vehicle_log 
-                        SET exit_time = ?, due_payment = ?, payment_status = '1' 
+                        SET due_payment = ?, payment_status = '1' 
                         WHERE no = ?
                     ''', (
-                        exit_time.strftime('%Y-%m-%d %H:%M:%S'),
                         str(due_amount),
                         record_id
                     ))

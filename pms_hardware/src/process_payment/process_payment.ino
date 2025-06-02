@@ -53,9 +53,9 @@ void loop()
         }
 
         currentBalance = balanceStr.toInt();
-        Serial.print(currentPlate);
-        Serial.print(",");
-        Serial.println(balanceStr);
+        Serial.print("PLATE NUMBER: " +  currentPlate);
+        Serial.print(", ");
+        Serial.println("BALANCE: " + balanceStr);
 
         awaitingUpdate = true;
         sentReady = false;
@@ -87,8 +87,8 @@ void loop()
             String response = Serial.readStringUntil('\n');
             response.trim();
 
-            Serial.print("[RECEIVED FROM PC]: ");
-            Serial.println(response);
+            // Serial.print("[RECEIVED FROM PC]: ");
+            // Serial.println(response);
 
             if (response == "I")
             {
@@ -96,8 +96,8 @@ void loop()
             }
             else
             {
-                Serial.print("[DEBUG] Cleaned response: '");
-                Serial.print(response);
+                // Serial.print("[DEBUG] Cleaned response: '");
+                // Serial.print(response);
                 Serial.println("'");
 
                 response.trim(); // Right before toInt()

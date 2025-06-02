@@ -32,12 +32,13 @@ export default function Home() {
   const [alerts, setAlerts] = useState<Alert[]>([]);
   const [stats, setStats] = useState<Stats | null>(null);
   const [loading, setLoading] = useState(true);
+  const [initialLoad, setInitialLoad] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [activeTab, setActiveTab] = useState<"vehicles" | "alerts">("vehicles");
   const [search, setSearch] = useState("");
 
   const fetchData = async () => {
-    setLoading(true);
+    if (initialLoad) setLoading(true); // Only show loading UI on initial load
     setError(null);
     try {
       const [vehiclesRes, alertsRes, statsRes] = await Promise.all([
@@ -62,12 +63,13 @@ export default function Home() {
       console.error(err);
     } finally {
       setLoading(false);
+      setInitialLoad(false); // Disable future loading indicator
     }
   };
 
   useEffect(() => {
     fetchData();
-    const interval = setInterval(fetchData, 5000); // Poll every 30 seconds
+    const interval = setInterval(fetchData, 5000); // Poll every 5 seconds
     return () => clearInterval(interval);
   }, []);
 
@@ -142,7 +144,7 @@ export default function Home() {
         )}
 
         {/* Loading and Error States */}
-        {loading && <p className="text-center">Loading...</p>}
+        {initialLoad && loading && <p className="text-center">Loading...</p>}
         {error && <p className="text-center text-red-500">{error}</p>}
 
         {/* Vehicles Table */}
@@ -156,7 +158,7 @@ export default function Home() {
                   <th className="p-3 text-left">Exit Time</th>
                   <th className="p-3 text-left">Payment Due</th>
                   <th className="p-3 text-left">Payment Status</th>
-                  <th className="p-3 text-left">Alert</th>
+                  <th className="p-3 text-left">Is Exited</th>
                 </tr>
               </thead>
               <tbody>
@@ -167,7 +169,9 @@ export default function Home() {
                     <td className="p-3">{v.exit_time || "---"}</td>
                     <td className="p-3">{v.due_payment || "N/A"}</td>
                     <td className="p-3">{v.payment_status === "1" ? "Paid" : "Unpaid"}</td>
-                    <td className="p-3">{v.payment_status === "0" ? "⚠️ Pending Payment" : ""}</td>
+                    <td className={`p-3`}>
+                      <span className={`${v.payment_status === "1" ? "bg-green-200" : "bg-yellow-200"}`}>{v.payment_status === "0" ? "YES" : "NO"}</span>
+                    </td>
                   </tr>
                 ))}
               </tbody>
