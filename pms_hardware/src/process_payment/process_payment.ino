@@ -53,9 +53,9 @@ void loop()
         }
 
         currentBalance = balanceStr.toInt();
-        Serial.print("PLATE NUMBER: " +  currentPlate);
+        Serial.print(currentPlate);
         Serial.print(", ");
-        Serial.println("BALANCE: RWF " + balanceStr);
+        Serial.println(balanceStr);
 
         awaitingUpdate = true;
         sentReady = false;
