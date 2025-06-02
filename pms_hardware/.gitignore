@@ -1,0 +1,24 @@
+# === Python ===
+__pycache__/
+dist/
+build/
+
+# === Virtual environments ===
+.venv/
+
+# === VS Code ===
+.vscode/
+
+# === Logs and runtime ===
+*.log
+*.pid
+*.gz
+*.swp
+*.swo
+*.sqlite3
+*.db
+
+
+# === DATASETS ===
+/dataset
+/plates

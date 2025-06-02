@@ -1,0 +1,6 @@
+path: C:\Users\user\Desktop\NE-resources\Practicals\Intelligent Robotics\parking-management-system\dataset
+train: C:\Users\user\Desktop\NE-resources\Practicals\Intelligent Robotics\parking-management-system\dataset\train
+val: C:\Users\user\Desktop\NE-resources\Practicals\Intelligent Robotics\parking-management-system\dataset\val
+
+names:
+  0: license_plate
